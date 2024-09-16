@@ -25,3 +25,10 @@ total_home_runs = print(home_runs.sum())
 # to the average_home_runs variable below
 average_home_runs = print(home_runs.mean())
 #4.25
+
+#Parameters and arguments
+fruits = ["apple","orange","plum","grape","bluberry","watermelon"]
+weekdays = ["monday", "tuesday", "wednesday", "thursday", "friday","saturday"]
+print(pd.Series(fruits))
+print(pd.Series(weekdays))
+print(pd.Series(data=fruits, index=weekdays))
