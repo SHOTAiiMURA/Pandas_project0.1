@@ -1,3 +1,4 @@
+import pandas
 import pandas as pd
 
 sushi = pd.Series(["samon","tuna","maguro","tai"])
@@ -32,3 +33,32 @@ weekdays = ["monday", "tuesday", "wednesday", "thursday", "friday","saturday"]
 print(pd.Series(fruits))
 print(pd.Series(weekdays))
 print(pd.Series(data=fruits, index=weekdays))
+
+mydataset = {'cars':["BMW","Volvo","Ford"],'passings':[3,7,2]}
+
+myvar = pandas.DataFrame(mydataset)
+print(myvar)
+
+print(pd.__version__)
+
+a = [1,7,2]
+
+myvar2 = pd.Series(a)
+
+print(myvar2[0])
+
+myvar3 = pd.Series(a,index=["x","y","z"])
+print(myvar3)
+print(myvar3["z"])
+
+data = {
+    "calories": [430,250,508],
+    "duraiton": [40,23,50]
+}
+#load data into a DataFrame object:
+df = pd.DataFrame(data)
+
+print(df.loc[0,1])
+
+df = pd.DataFrame(data, index=["day1","day2","day3"])
+print(df)
