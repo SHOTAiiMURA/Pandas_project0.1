@@ -60,5 +60,9 @@ df = pd.DataFrame(data)
 
 print(df.loc[0,1])
 
-df = pd.DataFrame(data, index=["day1","day2","day3"])
-print(df)
+#df = pd.DataFrame(data, index=["day1","day2","day3"])
+#print(df)
+
+df1 = pandas.read_csv('data.csv')
+print(df1.to_string())
+print(df1)
